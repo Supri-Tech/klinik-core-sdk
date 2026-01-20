@@ -68,3 +68,33 @@ export {
   createAuditFieldsForInsert,
   createAuditFieldsForUpdate,
 } from "./utils/auditFields";
+
+// ============================================================================
+// OpenAPI
+// ============================================================================
+export {
+  // Extended Zod with .openapi() method
+  z,
+  // zod-to-openapi classes
+  extendZodWithOpenApi,
+  OpenAPIRegistry,
+  OpenApiGeneratorV3,
+  OpenApiGeneratorV31,
+  // Common schemas
+  ErrorResponseSchema,
+  SuccessResponseSchema,
+  PaginatedResponseSchema,
+  PaginationMetaSchema,
+  PaginationQuerySchema,
+  UUIDParamSchema,
+  StatusAktifSchema,
+  SearchQuerySchema,
+  AuditFieldsSchema,
+  // Types
+  type ErrorResponse,
+  type PaginationMeta as OpenAPIPaginationMeta,
+  type PaginationQuery as OpenAPIPaginationQuery,
+  type UUIDParam,
+  type StatusAktif,
+  type AuditFields as OpenAPIAuditFields,
+} from "./openapi";
